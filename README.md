@@ -32,7 +32,7 @@ User could modify the `config.json` (path/server or other configuration items) t
             "type": 
                 "script", 
             "path": 
-                "/home/alpha/projs/pys/mcp-client/servers/simple_add.py", 
+                "/home/alpha/projs/pys/mcp-client/oai-mcp-client/servers/simple_add.py", 
             "name": 
                 "simple_add"
         },
