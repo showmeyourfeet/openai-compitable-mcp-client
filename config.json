@@ -1,7 +1,47 @@
 {
-  "servers": [
-    {"type": "script", "path": "/home/alpha/projs/pys/mcp-client/servers/simple_add.py", "name": "simple_add"},
-    {"type": "package", "command": "uvx", "args": ["--default-index", "https://pypi.tuna.tsinghua.edu.cn/simple", "mcp-server-fetch"], "name": "mcp-server-fetch"},
-    {"type": "package", "command": "deno", "args": ["run", "-N", "-R=node_modules", "-W=node_modules", "--node-modules-dir=auto", "jsr:@pydantic/mcp-run-python", "stdio"], "name": "code_interpreter"}
-  ]
+  "servers": 
+    [
+        {
+            "type": 
+                "script", 
+            "path": 
+                "/home/alpha/projs/pys/mcp-client/src/servers/simple_add.py", 
+            "name": 
+                "simple_add"
+        },
+
+        {
+            "type": 
+                "package", 
+            "command": 
+                "uvx", 
+            "args": 
+                [
+                    "--default-index", 
+                    "https://pypi.tuna.tsinghua.edu.cn/simple", 
+                    "mcp-server-fetch"
+                ], 
+            "name": 
+                "mcp-server-fetch"
+        },
+
+        {
+            "type": 
+                "package", 
+            "command": 
+                "deno", 
+            "args": 
+                [
+                    "run", 
+                    "-N", 
+                    "-R=node_modules", 
+                    "-W=node_modules", 
+                    "--node-modules-dir=auto", 
+                    "jsr:@pydantic/mcp-run-python", 
+                    "stdio"
+                ], 
+            "name": 
+                "code_interpreter"
+        }
+    ]
 }

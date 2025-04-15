@@ -58,7 +58,7 @@ User could modify the config to add your own mcp-server, the format is `command[
                     "stdio"
                 ], 
             "name": 
-            "code_interpreter"
+                "code_interpreter"
         }
     ]
 }
